@@ -1,6 +1,6 @@
 In order to use this script you need to:
 	1- Setup a Google custom search engine
-		link: [https://developers.google.com/custom-search/json-api/v1/overview](https://developers.google.com/custom-search/json-api/v1/overview)
+		link: https://developers.google.com/custom-search/json-api/v1/overview
 	2- In this script, the result of search are cached in a Redis server for a day,
 		since Google custom search engine has the limit of 100 query per day free users. 
 		So a Redis server is required to cache the search text as key and all returned results as value.
