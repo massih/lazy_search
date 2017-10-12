@@ -1,9 +1,13 @@
 In order to use this script you need to:
 	1- Setup a Google custom search engine
 		link: https://developers.google.com/custom-search/json-api/v1/overview
-	2- In this script, the result of search are cached in a Redis server for a day, since Google custom search engine has the limit of 100 query per day free users.
+	2- In this script, the result of search are cached in a Redis server for a day,
+		since Google custom search engine has the limit of 100 query per day free users. 
+		So a Redis server is required to cache the search text as key and all returned results as value.
 	3- Install all required library using pip and requirement.txt
-	4- Create configs.py in the root of project, which includes all configs of your custom search engine and Redis host and port. This file is not included in the repo since it contains api-key. Below is an example of sucj file:
+	4- Create configs.py in the root of project, which includes all configs of your custom search engine
+		and Redis' host and port. This file is not included in the repo since it contains api-key. 
+		Below is an example of such file:
 		./configs.py
 			GOOGLE_API_URL = 'https://www.googleapis.com/customsearch/v1?'
 			GOOGLE_API_KEY = 'blablabla'
